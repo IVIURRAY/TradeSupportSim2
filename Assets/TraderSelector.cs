@@ -22,6 +22,14 @@ public class TraderSelector : MonoBehaviour {
                 if (hit.collider!=null)
                 {
                     print(hit.collider.name);
+					Transform trader = hit.collider.GetComponentInParent<TraderController>().activeTrader;
+					if (trader.name == hit.collider.name)
+					{
+						// If player selects to active trader then we should put them back to normal.
+						trader.GetComponent<Renderer>().material.color = Color.grey;
+						hit.collider.GetComponentInParent<TraderController>().activeTrader = null;
+						trader.GetComponent<BoxCollider>().material = null;
+					}
                 }
             }
         }
