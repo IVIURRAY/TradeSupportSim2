@@ -61,10 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraController.cs" />
-    <Compile Include="Assets\Trader.cs" />
-    <Compile Include="Assets\TraderController.cs" />
-    <Compile Include="Assets\TraderSelector.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Trader.cs" />
+    <Compile Include="Assets\Scripts\TraderController.cs" />
+    <Compile Include="Assets\Scripts\TraderSelector.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>H:/Code/UnityProjects/CameraTest/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
